@@ -1,0 +1,16 @@
+
+	GITHUB:-
+=====================
+git clone https://github.com/manikumar15/file-handling.git
+
+cd filehandling
+
+git add .
+
+git commit -m add-newfiles
+
+git push -u origin master
+
+git pull
+
+--------------------------

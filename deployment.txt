@@ -1,0 +1,55 @@
+						   DEPLOYMENT:-
+					------------------------------------
+Step 1:-  first step goto https://www.pythonanywhere.com/ 
+step 2:-  create an account and login with valid credentials
+
+step 3: - first make your project as zip
+step 4:-  goto files and and upload your zip file to it 
+step 5:-  open gitbash terminal and enter following code
+
+step 6:-  $mkvirtualenv django20 --python=/usr/bin/python3.6
+	  $dir
+	  $unzip latestpro
+	  $cd latestpro
+	  $dir
+	  $pip install -r requirements.txt
+	  $python manage.py collectstatic
+
+step 7:- open settings.py  and add these line 
+		AllowedHosts=[' * ']
+
+step 8: - goto web and godown to code and add these lines on wsgi
+
+	  1) WSGI configuration file: :- 
+			
+				import os
+
+				import sys
+				path = '/home/ItConsultantServices/loginpro'
+
+				if path not in sys.path:
+    
+					sys.path.append(path)
+				os.environ['DJANGO_SETTINGS_MODULE'] = 'loginpro.settings'
+				from django.core.wsgi import get_wsgi_application
+				
+application = get_wsgi_application()
+				import django.core.handlers.wsgi
+
+				application=django.core.handlers.wsgi.WSGIHandler()
+
+step 9:- virtualenv: myenv
+
+
+			URL		Directory
+	               -----           ------------
+step 9: staticfiles:- 1)  /static/     	/home/mainfolder/latestpro/static/static_root
+
+
+
+
+	  
+
+
+
+	
