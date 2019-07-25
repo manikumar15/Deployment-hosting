@@ -1,2 +1,3 @@
 # Deployment-hosting
-hosting a website commands
+1) hosting a website using commands
+2)github commands
