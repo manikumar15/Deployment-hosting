@@ -2,4 +2,4 @@
 1) hosting a website using commands
 
 
-2)github commands
+  2) github commands
